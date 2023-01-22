@@ -8,7 +8,7 @@ date: 2023-01-22
 ## 커피의 수도 치앙마이
 첫 4박 5일은 치앙마이에서 머물렀다. 너무 덥고 습하지 않을까 걱정했는데, 생각보다 쾌적해서 돌아다니기 좋았다. 세련된 건물들이 많고 도로도 잘 정비되어 있었다. 그나마 한 가지 안 좋은 점을 꼽자면 매연 냄새였는데, 도로에 차와 오토바이가 많았다. 규제가 심하지 않은 건지 한 번씩 지나치게 매연을 뿜는 차나 자동차가 지나가곤 했다.
 
-![One Nimman 종합 쇼핑몰 근처. 집에서 가까웠다.](/post/changmai-travel-journal/changmai-street.jpg)
+![One Nimman 종합 쇼핑몰 근처. 집에서 가까웠다.](/post/chiangmai-travel-journal/chiangmai-street.jpg)
 
  
 
@@ -20,7 +20,7 @@ date: 2023-01-22
 
 
 아래 사진은 가장 마음에 들었던 Diciotto 카페 메뉴판. 원두가 10종류가 넘고, 주인분께서 굉장히 젠틀하고 멋있으셨다.
-![가장 마음에 들었던 Diciotto 카페. 원두가 10종류가 넘고, 주인분께서 굉장히 젠틀하고 멋있으셨다.](/post/changmai-travel-journal/slowbar-coffee-menu.jpg)
+![가장 마음에 들었던 Diciotto 카페. 원두가 10종류가 넘고, 주인분께서 굉장히 젠틀하고 멋있으셨다.](/post/chiangmai-travel-journal/slowbar-coffee-menu.jpg)
 
 
 
@@ -32,7 +32,7 @@ date: 2023-01-22
 
 이유는 모르겠지만 우리가 요리했던 음식들이 음식점에서 파는 요리보다도 맛있었다. 특히 팟타이가 너무 맛있어서, 한국에 돌아와서도 계속 요리해 먹어야겠다는 생각을 했다. 팟타이, 똠얌꿍을 만들고 나니 태국 향신료를 어느 정도 알게 되었다. 한 번씩 신기한 맛이 나서 “이게 무슨 맛이지?” 싶을 때가 있었는데, 범인을 알게 되어 좋았다. 그 이후부터 우리 가족들은 싫어하는 맛이 있으면 관련 향신료를 빼고 음식을 먹을 수 있었다.
 
-![태국에서 쓰는 각종 향신료들을 사용했다.](/post/changmai-travel-journal/cooking-class.jpg)
+![태국에서 쓰는 각종 향신료들을 사용했다.](/post/chiangmai-travel-journal/cooking-class.jpg)
 
 
 ---
