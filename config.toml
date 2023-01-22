@@ -1,0 +1,4 @@
+baseURL = 'muuty.github.io'
+languageCode = 'en-us'
+title = 'Muuty'
+theme = 'holy'
