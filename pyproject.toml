@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "muuty-github-io"
+version = "0.1.0"
+description = ""
+authors = ["Jacob Taeyoung Yu <muuty.me@gmail.com>"]
+readme = "README.md"
+packages = [{include = "*", from="src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+markdown = "^3.7"
+click = "^8.1.7"
+jinja2 = "^3.1.4"
+flake8 = "^7.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+types-markdown = "^3.7.0.20240822"
+isort = "^5.13.2"
+black = "^24.8.0"
+mypy = "^1.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# To run scripts.py as a simple cli command, ex: poetry run scripts build
+[tool.poetry.scripts]
+scripts = "src.scripts:cli"
+
+[tool.mypy]
+mypy_path = "src"
+explicit_package_bases = true
+strict = true
+exclude = "tests"
