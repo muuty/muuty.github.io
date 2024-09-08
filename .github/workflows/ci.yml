@@ -26,14 +26,13 @@ jobs:
 
       - name: Run flake8 (Linting)
         run: |
-          poetry run flake8 src
+          make lint
 
       - name: Run Black and isort (Formatting)
         run: |
-          poetry run black --check src
-          poetry run isort --check src
+          make format
 
       - name: Run mypy (Type Checking)
         run: |
-          poetry run mypy src
+          make mypy
 
