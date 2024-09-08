@@ -24,16 +24,15 @@ jobs:
           pip install poetry
           poetry install
 
-      - name: Run flake8 (Linting)
+      - name: Run Linting
         run: |
-          poetry run flake8 src
+          make lint
 
-      - name: Run Black and isort (Formatting)
+      - name: Run Formatting
         run: |
-          poetry run black --check src
-          poetry run isort --check src
+          make format
 
       - name: Run mypy (Type Checking)
         run: |
-          poetry run mypy src
+          make mypy
 

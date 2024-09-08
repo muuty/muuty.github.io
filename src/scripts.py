@@ -11,7 +11,7 @@ def cli() -> None:
 @cli.command()
 def build() -> None:
     click.echo("Running build...")
-    PageBuilder().build_posts()
+    PageBuilder().build_pages()
 
 
 @cli.command()
