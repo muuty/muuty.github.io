@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-format-mypy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry install
+
+      - name: Run flake8 (Linting)
+        run: |
+          poetry run flake8 src
+
+      - name: Run Black and isort (Formatting)
+        run: |
+          poetry run black --check src
+          poetry run isort --check src
+
+      - name: Run mypy (Type Checking)
+        run: |
+          poetry run mypy src
+
