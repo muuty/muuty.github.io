@@ -24,11 +24,11 @@ jobs:
           pip install poetry
           poetry install
 
-      - name: Run flake8 (Linting)
+      - name: Run Linting
         run: |
           make lint
 
-      - name: Run Black and isort (Formatting)
+      - name: Run Formatting
         run: |
           make format
 
