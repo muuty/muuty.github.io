@@ -20,3 +20,8 @@ mypy:
 build:
 	@echo "Running build..."
 	poetry run scripts build
+
+
+preview:
+	@echo "Starting local server with live reload..."
+	@cd pages && poetry run livereload .
