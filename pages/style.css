@@ -1,0 +1,61 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #121212;  /* Dark background */
+    color: #e0e0e0;             /* Light text for readability */
+
+}
+
+
+header {
+    display: flex;             /* Flexbox layout */
+    justify-content: space-between;  /* Spread left and right content */
+    align-items: center;       /* Vertically center content */
+    padding: 20px 0;        /* Padding for some space inside the header */
+}
+
+.header-left .brand {
+    font-size: 40px;           /* Adjust the font size for emphasis */
+    text-decoration: none;     /* Remove underline from the link */
+}
+
+.header-right nav a {
+    font-weight: 600;          /* Semi-bold text */
+    font-size: 18px;           /* Slightly smaller font size */
+    text-decoration: none;     /* Remove underline from links */
+    margin-left: 20px;         /* Add space between the links */
+}
+
+
+a {
+    color: #800020;  /* Bright color for links */
+}
+
+.toc-level-1 {
+    list-style-type: none; /* No bullet point for H1 items */
+}
+
+.toc-level-2 {
+    margin-left: 20px;  /* Adjust this value as needed */
+    list-style-type: circle; /* Hollow circle for H2 items */
+
+}
+
+
+.table-of-contents {
+    border: 2px solid #333; /* 2px thick solid border with a dark color */
+    padding: 10px; /* Add padding inside the border */
+    border-radius: 5px; /* Optional: make the corners slightly rounded */
+}
+
+
+.container {
+    max-width: 800px;  /* Maximum width of the container */
+    margin: 0 auto;     /* Center the container horizontally */
+    padding: 0 20px;    /* Add some padding for small screens */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid #BBBBBB; /* Adjust the color to your preference */
+    padding-bottom: 10px;          /* Add some space between text and the divider */
+    margin-bottom: 20px;           /* Add space below the header */
+}

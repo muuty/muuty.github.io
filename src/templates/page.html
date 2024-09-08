@@ -10,15 +10,6 @@
 <body>
     <div class="container">
         {{ header }}
-        <div class="table-of-contents">
-            <ul>
-                {% for heading in table_of_contents %}
-                <li class="toc-level-{{ heading.level }}">
-                    <a href="#{{ heading.id }}">{{ heading.text }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
         {{ content | safe }}
     </div>
 </body>
