@@ -7,7 +7,7 @@ lint:
 
 # Formatting using Black
 format:
-	@echo "Running formating..."
+	@echo "Running formatting..."
 	uv run ruff format src
 
 # Type checking using MyPy
