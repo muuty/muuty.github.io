@@ -7,7 +7,7 @@ lint:
 
 # Formatting using Black
 format:
-	@echo "Running black and isort"
+	@echo "Running formating..."
 	uv run ruff format src
 
 # Type checking using MyPy
