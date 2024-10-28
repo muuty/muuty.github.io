@@ -1,16 +1,27 @@
-body {
-    font-family: 'Pretendard', sans-serif;
-    background-color: #121212;  /* Dark background */
-    color: #e0e0e0;             /* Light text for readability */
+:root {
+    --background-color: #000000;
+    --text-color: #FFFFFF;
+    --link-color: #FFFFFF;
+    --accent-color: green;
+}
 
+body {
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: 300;
+    background-color: var(--background-color);  /* Dark background */
+    color: var(--text-color);
 }
 
 
 header {
-    display: flex;             /* Flexbox layout */
-    justify-content: space-between;  /* Spread left and right content */
+    /*display: flex;             !* Flexbox layout *!*/
     align-items: center;       /* Vertically center content */
     padding: 20px 0;        /* Padding for some space inside the header */
+}
+
+header a {
+    color: var(--text-color);
+    font-weight: 100;
 }
 
 .header-left .brand {
@@ -19,25 +30,42 @@ header {
 }
 
 .header-right nav a {
-    font-weight: 600;          /* Semi-bold text */
     font-size: 18px;           /* Slightly smaller font size */
     text-decoration: none;     /* Remove underline from links */
-    margin-left: 20px;         /* Add space between the links */
 }
 
 
 a {
-    color: #800020;  /* Bright color for links */
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
-.toc-level-1 {
-    list-style-type: none; /* No bullet point for H1 items */
-}
+
 
 .toc-level-2 {
-    margin-left: 20px;  /* Adjust this value as needed */
-    list-style-type: circle; /* Hollow circle for H2 items */
+    list-style-type: none; /* No bullet point for H2 items */
+}
 
+.toc-level-3 {
+    margin-left: 20px;  /* Adjust this value as needed */
+    list-style-type: circle; /* Hollow circle for H3 items */
+
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.prev-post, .next-post {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.prev-post:hover, .next-post:hover {
+    text-decoration: underline;
 }
 
 
@@ -55,7 +83,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    border-bottom: 1px solid #BBBBBB; /* Adjust the color to your preference */
+    font-weight: 300;
     padding-bottom: 10px;          /* Add some space between text and the divider */
     margin-bottom: 20px;           /* Add space below the header */
+}
+
+
+h1 {
+    border-bottom: 1px solid #FFFFFF; /* Adjust the color to your preference */
 }
