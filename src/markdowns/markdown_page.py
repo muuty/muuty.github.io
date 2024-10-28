@@ -37,7 +37,7 @@ class MarkdownPage:
     def is_post(self) -> bool:
         return self.source_path.split("\\")[1] == "posts"
 
-    def _validate_metadata(self, metadata: dict[str, Any]):
+    def _validate_metadata(self, metadata: dict[str, Any]) -> None:
         not_filled_fields = [
             field for field in REQUIRED_METADATA_FIELDS if field not in metadata
         ]

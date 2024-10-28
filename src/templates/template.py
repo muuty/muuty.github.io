@@ -1,27 +1,24 @@
-from abc import ABCMeta
+from abc import ABCMeta, abstractmethod
 
 from markdowns.markdown_page import MarkdownPage
 from jinja2 import Environment, FileSystemLoader
 
 
 TEMPLATE_DIR = "src/templates"
-POST_TEMPLATE = "post.html"
-PAGE_TEMPLATE = "page.html"
-POSTS_TEMPLATE = "posts.html"
-
 ENV = Environment(loader=FileSystemLoader(searchpath=TEMPLATE_DIR))
-POST_TEMPLATE = ENV.get_template(POST_TEMPLATE)
-PAGE_TEMPLATE = ENV.get_template(PAGE_TEMPLATE)
-POSTS_TEMPLATE = ENV.get_template(POSTS_TEMPLATE)
+POST_TEMPLATE = ENV.get_template("post.html")
+PAGE_TEMPLATE = ENV.get_template("page.html")
+POSTS_TEMPLATE = ENV.get_template("posts.html")
 
 
 class Template(metaclass=ABCMeta):
+    @abstractmethod
     def render(self, page: MarkdownPage) -> str:
         pass
 
 
 class PostTemplate(Template):
-    def __init__(self):
+    def __init__(self) -> None:
         self.template = POST_TEMPLATE
 
     def render(self, page: MarkdownPage) -> str:
@@ -36,7 +33,7 @@ class PostTemplate(Template):
 
 
 class PageTemplate(Template):
-    def __init__(self):
+    def __init__(self) -> None:
         self.template = PAGE_TEMPLATE
 
     def render(self, page: MarkdownPage) -> str:

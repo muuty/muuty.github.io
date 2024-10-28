@@ -73,7 +73,7 @@ class PageBuilder:
 
         return rendered_html
 
-    def write_page_on_destination(self, destination: str, page_in_html: str):
+    def write_page_on_destination(self, destination: str, page_in_html: str) -> None:
         with open(destination, "w", encoding="utf-8") as file:
             print(f"{destination} is wrote")
             file.write(page_in_html)
@@ -81,8 +81,8 @@ class PageBuilder:
     def render(
         self,
         page: MarkdownPage,
-        previous_page: MarkdownPage,
-        next_page: MarkdownPage,
+        previous_page: MarkdownPage | None,
+        next_page: MarkdownPage | None,
         template: Template,
     ) -> str:
         rendered_html = template.render(
