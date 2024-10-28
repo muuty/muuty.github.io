@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></head>
 </head>
 <body>
     <div class="container">
-        {{ header }}
+        {% include "header.html" %}
         <div class="table-of-contents">
             <ul>
                 {% for heading in table_of_contents %}
@@ -20,6 +21,17 @@
             </ul>
         </div>
         {{ content | safe }}
+
+        <div class="post-navigation">
+            {% if previous_post %}
+                <a href="{{ previous_post.source_path }}" class="prev-post">&larr; Previous: {{ previous_post.title }}</a>
+            {% endif %}
+
+            {% if next_post %}
+                <a href="{{ next_post.source_path}}" class="next-post">Next: {{ next_post.title }} &rarr;</a>
+            {% endif %}
+        </div>
+
     </div>
 </body>
 </html>

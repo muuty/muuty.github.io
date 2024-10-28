@@ -1,0 +1,11 @@
+<div class="post-list">
+    <ul>
+        {% for post in post_list.pages %}
+        <li>
+            <a class="post-title" href="/{{post.get_page_path()}}/">{{ post.title }}</a>
+            <p class="post-description"> {{ post.description }}</p>
+            <p> {{ post.created_at }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
