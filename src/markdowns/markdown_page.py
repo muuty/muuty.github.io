@@ -70,4 +70,4 @@ class MarkdownPage:
             os.path.splitext(relative_path)[0].replace("\\", "/")
         )
         os.makedirs(os.path.dirname(destination), exist_ok=True)
-        return destination + ".html"
+        return destination
