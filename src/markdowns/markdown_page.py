@@ -67,7 +67,7 @@ class MarkdownPage:
     def get_page_path(self) -> str:
         relative_path = os.path.relpath(self.source_path, "_pages")
         destination = os.path.join(
-            os.path.splitext(relative_path)[0].replace('\\', '/')
+            os.path.splitext(relative_path)[0].replace("\\", "/")
         )
         os.makedirs(os.path.dirname(destination), exist_ok=True)
         return destination

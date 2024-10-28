@@ -5,7 +5,7 @@ import os
 from elements.page import PageList
 from markdowns.markdown_page import MarkdownPage
 from templates.template import POST_TEMPLATE, PAGE_TEMPLATE, POSTS_TEMPLATE
-from jinja2 import Environment, FileSystemLoader, Template
+from jinja2 import Template
 
 
 HEADER_TEMPLATE = "header.html"
@@ -35,8 +35,7 @@ class PageBuilder:
                     template=template,
                 )
                 self.write_page_on_destination(
-                    self.get_destination(page.source_path),
-                    page_in_html
+                    self.get_destination(page.source_path), page_in_html
                 )
 
         sorted_pages = self.post_list.get_sorted_pages()
@@ -54,8 +53,7 @@ class PageBuilder:
             )
 
             self.write_page_on_destination(
-                self.get_destination(page.source_path),
-                page_in_html
+                self.get_destination(page.source_path), page_in_html
             )
 
         posts_page = self.render_posts(PAGE_TEMPLATE, self.post_list)
@@ -75,10 +73,8 @@ class PageBuilder:
 
         return rendered_html
 
-    def write_page_on_destination(self, destination: str,  page_in_html: str):
-        with open(
-                destination, "w", encoding="utf-8"
-        ) as file:
+    def write_page_on_destination(self, destination: str, page_in_html: str):
+        with open(destination, "w", encoding="utf-8") as file:
             print(f"{destination} is wrote")
             file.write(page_in_html)
 
